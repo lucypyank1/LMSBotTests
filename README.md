@@ -52,7 +52,7 @@ pip install selenium
 
 4. Укажите ссылку на попытку теста:
    ```python
-   driver.get("https://lmsdo.rea.ru/mod/quiz/attempt.php?attempt=216869")
+   driver.get("https://lmsdo.rea.ru/mod/quiz/attempt.php?attempt=")
    ```
    Замените ссылку на актуальную для вашего теста.
 
