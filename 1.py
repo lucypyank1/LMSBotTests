@@ -49,7 +49,7 @@ driver.find_element(By.ID, "password").send_keys("password")
 driver.find_element(By.ID, "loginbtn").click()
 time.sleep(5)
 
-driver.get("https://lmsdo.rea.ru/mod/quiz/attempt.php?attempt=216869")
+driver.get("https://lmsdo.rea.ru/mod/quiz/attempt.php?attempt=")
 time.sleep(5)
 
 def try_click(by, value):
