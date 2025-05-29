@@ -45,14 +45,18 @@ pip install selenium
 
 3. Откройте файл `1.py` и укажите свои логин и пароль в строках:
    ```python
-   driver.find_element(By.ID, "username").send_keys("login")
-   driver.find_element(By.ID, "password").send_keys("password")
+   login = input("Введите логин: ")
+   password = input("Введите пароль: ")
+    
+    
+   driver.find_element(By.ID, "username").send_keys(login)
+   driver.find_element(By.ID, "password").send_keys(password)
    ```
-   Замените `"login"` и `"password"` на свои данные.
+   Введите актуальные `"login"` и `"password"` с клавиатуры в консоль.
 
-4. Укажите ссылку на попытку теста:
+4. Укажите ссылку на тест:
    ```python
-   driver.get("https://lmsdo.rea.ru/mod/quiz/attempt.php?attempt=")
+   driver.get("attemptref")
    ```
    Замените ссылку на актуальную для вашего теста.
 
