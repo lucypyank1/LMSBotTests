@@ -43,13 +43,17 @@ print("Загружено ответов:", len(answers))
 
 driver = webdriver.Chrome()
 driver.get("https://lmsdo.rea.ru/login/index.php")
+login = input("Введите логин: ")
+password = input("Введите пароль: ")
 
-driver.find_element(By.ID, "username").send_keys("login")
-driver.find_element(By.ID, "password").send_keys("password")
+
+driver.find_element(By.ID, "username").send_keys(login)
+driver.find_element(By.ID, "password").send_keys(password)
 driver.find_element(By.ID, "loginbtn").click()
 time.sleep(5)
+ref = input("Введите ссылку на тест: ")
 
-driver.get("https://lmsdo.rea.ru/mod/quiz/attempt.php?attempt=")
+driver.get(ref)
 time.sleep(5)
 
 def try_click(by, value):
